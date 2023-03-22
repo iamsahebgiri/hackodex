@@ -3,8 +3,8 @@ import Head from "next/head";
 const DOMAIN = "https://hackodex.codex-iter.in";
 
 export default function Meta({
-  title = "Hackodex - Its great ;)",
-  description = "Hackodex idk",
+  title = "Hackodex - A Month-Long Open-Source Coding Event for College Students",
+  description = "Hackodex is a month-long event designed to promote open-source contributions among college students. The event provides a platform for students to showcase their coding skills and contribute to real-world open-source projects.",
   image = `${DOMAIN}/api/og`,
 }: {
   title?: string;
