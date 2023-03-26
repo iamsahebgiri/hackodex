@@ -28,7 +28,7 @@ export default function Layout({
     <>
       <Meta {...meta} />
       <SignInModal />
-      <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+      <div className="fixed h-screen w-full bg-[#6e352c]" />
       <div
         className={`fixed top-0 w-full ${
           scrolled
@@ -41,17 +41,17 @@ export default function Layout({
             <Image
               src="/logo.png"
               alt="Hackodex logo"
-              width="30"
-              height="30"
+              width="200"
+              height="200"
               className="mr-2 rounded-sm"
             />
-            <p>Hackodex &apos;23</p>
+            {/*<p>Hackodex &apos;23</p>*/}
           </Link>
           <div>
             <AnimatePresence>
               {!session && status !== "loading" ? (
                 <motion.button
-                  className="rounded-full border border-black bg-black p-2 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                  className="rounded-full border border-[#e3c598] bg-[#e3c598] p-2 px-4 text-sm text-[#6e612f] transition-all hover:bg-[#6e612f] hover:text-[#e3c598]"
                   onClick={() => setShowSignInModal(true)}
                   {...FADE_IN_ANIMATION_SETTINGS}
                 >
