@@ -40,7 +40,7 @@ const RegisterPage = () => {
           className="mt-20 flex flex-col justify-between sm:flex-row"
         >
           <motion.a
-            href="#"
+            href="https://forms.gle/12hNqJos3uJPtMSj7"
             className="mb-4 rounded bg-[#cf5230] py-2 px-4 text-white sm:mb-0 sm:mr-4 text-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

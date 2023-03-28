@@ -9,15 +9,15 @@ const Faq = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className=" mx-auto">
       {faqs.map((faq: FaqItem, index: number) => (
         <div
           key={index}
-          className="border-b border-gray-200 pb-4"
+          className="border-b border-[#6e352c] pb-4"
           onClick={() => toggleQuestion(index)}
         >
           <div className="flex items-center justify-between">
-            <h3 className="text-lg font-medium">{faq.question}</h3>
+            <h3 className="text-lg font-medium text-[#cf5230]">{faq.question}</h3>
             <span
               className={`${
                 selectedQuestion === index
@@ -27,7 +27,7 @@ const Faq = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 text-[#6e352c]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -50,7 +50,7 @@ const Faq = () => {
               selectedQuestion === index ? "max-h-32" : "max-h-0"
             } overflow-hidden transition-all duration-200 ease-in-out mt-2`}
           >
-            <p className="text-gray-500">{faq.answer}</p>
+            <p className="text-[#6e612f]">{faq.answer}</p>
           </div>
         </div>
       ))}

@@ -36,7 +36,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <motion.a
-                href="#"
+                href="/register"
                 className="rounded-md bg-[#f59a44] px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-[#e3c598] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

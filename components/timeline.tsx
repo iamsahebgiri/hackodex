@@ -4,7 +4,7 @@ const Timeline = () => {
   const { events } = timelineData;
 
   return (
-    <div className="max-w-4xl mx-auto mt-12">
+    <div className=" mx-auto mt-12">
       {events.map((event) => (
         <div key={event.id} className="relative pb-8">
           <div className="relative flex space-x-3">
@@ -12,16 +12,16 @@ const Timeline = () => {
               <span className="text-white font-medium">{event.id}</span>
             </div>
             <div className="min-w-0 flex-1 pt-1.5 flex justify-between">
-              <div className="text-sm text-[#e3c598]">
+              <div className="text-sm text-[#cf5230]">
                 <time dateTime={event.date}>{event.date}</time>
               </div>
-              <div className="text-right text-sm text-[#e3c598]">
+              <div className="text-right text-sm text-[#cf5230]">
                 {event.title}
               </div>
             </div>
           </div>
           <div className="mt-4 ml-12">
-            <p className="text-base text-gray-900">{event.description}</p>
+            <p className="text-base text-[#6e612f]">{event.description}</p>
           </div>
           {event.id !== events.length && (
             <div
