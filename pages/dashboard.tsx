@@ -28,13 +28,13 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
   return (
     <div>
       <div className="flex p-4">
-        <p className="text-xl font-semibold">Your contributions</p>
+        <p className="text-xl font-semibold text-[#6e352c]">Your contributions</p>
       </div>
       <div className="px-2 pb-2">
         {prs.items.map((item: any) => (
           <div
             key={item.id}
-            className="group w-full cursor-pointer select-none rounded-md  hover:bg-gray-100"
+            className="group w-full cursor-pointer select-none rounded-md  hover:bg-[#f59a44]"
           >
             <div className="px-3 py-3">
               <div className="flex flex-row">
@@ -43,7 +43,7 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
                   href={item.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group-hover:text-juniper text-xl font-bold"
+                  className="group-hover:text-juniper text-xl font-bold text-[#cf5230]"
                 >
                   {item.title}
                 </a>
@@ -52,12 +52,12 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
               {item.description}
             </div> */}
               <div className="text-vanilla-400 flex flex-row py-1 font-mono text-sm">
-                <div className="mr-4">
-                  <span className="text-green-600">state: </span>
+                <div className="mr-4 text-[#6e612f]">
+                  <span className="text-[#f59a44]">state: </span>
                   {item.state}
                 </div>
-                <div className="mr-4">
-                  <span className="text-blue-600">created at: </span>
+                <div className="mr-4 text-[#6e612f]">
+                  <span className="text-[#6e352c]">created at: </span>
                   {new Date(item.created_at).toDateString()}
                 </div>
               </div>
@@ -72,19 +72,19 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
 const Progress = ({ count, max }: { count: number; max: number }) => {
   count = Math.min(count, max);
   return (
-    <div className="group relative col-span-1 overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-gray-900/5">
+    <div className="group relative col-span-1 overflow-hidden rounded-lg bg-[#e3c598] shadow-md ring-1 ring-[#cf5230]/5">
       <div className="flex p-4">
-        <p className="font-sans text-xl font-semibold">Your progress</p>
+        <p className="font-sans text-xl font-semibold text-[#6e352c]">Your progress</p>
       </div>
       <div className="mx-auto space-y-2 px-4 py-4 text-left">
         <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-lg font-bold text-transparent md:text-xl md:font-normal">
-          <Balancer>
+          <Balancer className="text-[#6e612f]">
             {count} out of {max} PRs
           </Balancer>
         </h2>
         <div className="h-2.5 w-full rounded-full bg-gray-200">
           <div
-            className="h-2.5 rounded-full bg-blue-600"
+            className="h-2.5 rounded-full bg-[#cf5230]"
             style={{ width: `${(count / max) * 100}%` }}
           />
         </div>
@@ -114,7 +114,7 @@ const Dashboard = () => {
   return (
     <Layout>
       <div className="grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        <div className="group relative col-span-1 overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-gray-900/5 md:col-span-2">
+        <div className="group relative col-span-1 overflow-hidden rounded-lg bg-[#e3c598] shadow-md ring-1 ring-[#cf5230]/5 md:col-span-2">
           <ListAllPRs prs={prs} error={error} isLoading={isLoading} />
         </div>
 
