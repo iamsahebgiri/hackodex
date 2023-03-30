@@ -80,7 +80,7 @@ const RepositoriesPage = () => {
             href="https://github.com/topics/hackodex"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-[#f59a44] px-4 py-2 font-semibold leading-7 text-[#f59a44] shadow-sm hover:bg-[#6e352c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e352c]"
+            className="rounded-md bg-[#6e352c] border border-[#f59a44] px-4 py-2 font-semibold leading-7 text-[#f59a44] shadow-sm hover:bg-[#6e352c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e352c]"
           >
             View all repositories
           </a>
