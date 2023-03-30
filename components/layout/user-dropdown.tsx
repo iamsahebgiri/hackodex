@@ -24,7 +24,7 @@ export default function UserDropdown() {
     >
       <Popover
         content={
-          <div className="w-full rounded-md bg-white p-2 sm:w-56">
+          <div className="w-full rounded-md bg-white p-2 sm:w-56 text-[#6e352c]">
             <Link
               className="relative flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
               href="/dashboard"

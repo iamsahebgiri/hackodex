@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useSignInModal } from "../components/layout/sign-in-modal";
 
 const RegisterPage = () => {
-  {/*const { SignInModal, setShowSignInModal } = useSignInModal();*/}
+  const { SignInModal, setShowSignInModal } = useSignInModal();
   return (
     <div className="flex h-screen items-center justify-center bg-[#6e352c] p-5">
       <motion.div
@@ -48,13 +48,13 @@ const RegisterPage = () => {
             Register
           </motion.a>
 
+          <SignInModal/>
           <motion.a
-            href="#"
+            href="/repos"
             className="rounded bg-[#f59a44] py-2 px-4 text-white text-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-          >
-            {/*onClick={() => setShowSignInModal(true)onClick={() => setShowSignInModal(true)}*/}
+            >
             Start Contributing
           </motion.a>
         </motion.div>
