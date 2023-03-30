@@ -73,6 +73,11 @@ export interface FaqItem {
       description:
         "No projects will be approved related to competitive coding or similar kind of stuff.",
     },
+    {
+      step: 10,
+      description:
+        "You need to add the 'hackodex2023' and 'hackodex2023-accepted' label to the merged PRs.",
+    },
     
   ];
 

@@ -28,7 +28,7 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
   return (
     <div>
       <div className="flex p-4">
-        <p className="text-xl font-semibold text-[#6e352c]">Your contributions</p>
+        <p className="text-3xl font-semibold text-[#6e352c]">Your contributions</p>
       </div>
       <div className="px-2 pb-2">
         {prs.items.map((item: any) => (
