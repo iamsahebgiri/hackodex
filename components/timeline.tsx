@@ -15,13 +15,13 @@ const Timeline = () => {
               <div className="text-sm text-[#cf5230]">
                 <time dateTime={event.date}>{event.date}</time>
               </div>
-              <div className="text-right text-sm text-[#cf5230]">
+              <div className="text-right text-sm text-[#f59a44]">
                 {event.title}
               </div>
             </div>
           </div>
           <div className="mt-4 ml-12">
-            <p className="text-base text-[#6e612f]">{event.description}</p>
+            <p className="text-base text-[#e3c598]">{event.description}</p>
           </div>
           {event.id !== events.length && (
             <div

@@ -44,7 +44,7 @@ export default function Home() {
                 Start hacking
               </motion.a>
               <motion.a
-                href="#"
+                href="/info"
                 className="text-base font-semibold leading-7 text-[#e3c598]"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

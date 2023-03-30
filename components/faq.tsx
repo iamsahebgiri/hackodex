@@ -27,7 +27,7 @@ const Faq = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#6e352c]"
+                className="h-6 w-6 text-[#f59a44]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -50,7 +50,7 @@ const Faq = () => {
               selectedQuestion === index ? "max-h-32" : "max-h-0"
             } overflow-hidden transition-all duration-200 ease-in-out mt-2`}
           >
-            <p className="text-[#6e612f]">{faq.answer}</p>
+            <p className="text-[#e3c598]">{faq.answer}</p>
           </div>
         </div>
       ))}

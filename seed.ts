@@ -7,19 +7,22 @@ export interface FaqItem {
   
   export const faqs: FaqItem[] = [
     {
-      question: "What is the first question?",
+      question: "How can contributors register?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non dolor vitae mi volutpat auctor vel at ipsum.",
+        "You need not register !! Firstly sign-in on your Hackodex website then start contributing to the enlisted 'hackcodex2023' tagged repositories, we will automatically track down all your contributions from your GitHub ID.",
     },
     {
-      question: "What is the second question?",
+      question: "What is open source and GitHub?",
       answer:
-        "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla aliquet massa eget sapien euismod, eget volutpat nulla auctor. ",
+        "Open source refers to software with source code that is freely available and can be modified. GitHub is a platform for hosting and collaborating on open source projects. ",
     },
     {
-      question: "What is the third question?",
-      answer:
-        "Suspendisse vitae est a purus aliquam dictum. Nunc sed velit vel mi euismod faucibus non non urna.",
+      question: "How to create a GitHub Account?",
+      answer:"To create a GitHub account, go to github.com and click 'Sign up'. Enter your details and create a username and password. Verify your email and you're ready to start using GitHub.",
+    },
+    {
+      question: "Do you have rewards?",
+      answer:" Yes!!! Our top 3 contributors will be receiving swag kits.What if you don't end up in top 3? If you get atleast 3 PRs merged, we still have rewards for you! ",
     },
   ];
 
@@ -90,15 +93,15 @@ export interface FaqItem {
     events: [
       {
         id: 1,
-        title: "Event 1",
-        date: "2023-04-01",
-        description: "To be announced",
+        title: "Mentor Registerations",
+        date: "2023-03-30 to 2023-04-10",
+        description: "Individuals who wish to be project mentors must register themselves using the Google Form available on the Registeration Page",
       },
       {
         id: 2,
-        title: "Event 2",
-        date: "Coming Soon",
-        description: "To be announced",
+        title: "Open Source Contributions",
+        date: "2023-04-08 to 2023-05-07",
+        description: "Individuals can Start contributing to open-source projects under the 'hackodex2023' tag, discuss with mentors and make PRs for the same. We will track your contributions during this phase!",
       },
     ],
   };
@@ -132,23 +135,43 @@ export interface FaqItem {
   export const resources = [
     {
       id: 1,
-      title: 'Next.js Documentation',
-      url: 'https://nextjs.org/docs/getting-started',
+      title: 'Codex: GitHub basics for Beginners',
+      url: 'https://www.youtube.com/watch?v=4ohwTU0NJ6s',
     },
     {
       id: 2,
-      title: 'Tailwind CSS Documentation',
-      url: 'https://tailwindcss.com/docs',
+      title: 'Codex: GitHub For Contributions',
+      url: 'https://www.youtube.com/watch?v=0ZoXSFtYHh8&t=5s',
     },
     {
       id: 3,
-      title: 'FreeCodeCamp Next.js Tutorial',
-      url: 'https://www.youtube.com/watch?v=mTz0GXj8NN0',
+      title: 'Open-Source: How to Contribute?',
+      url: 'https://opensource.guide/how-to-contribute/',
     },
     {
       id: 4,
-      title: 'Traversy Media Tailwind CSS Tutorial',
-      url: 'https://www.youtube.com/watch?v=UBOj6rqRUME',
+      title: 'GitHub: Training Kit',
+      url: 'https://training.github.com/',
+    },
+    {
+      id: 5,
+      title: 'GitHub: How to write a pull request?',
+      url: 'https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/',
+    },
+    {
+      id: 6,
+      title: 'GitHub: GitHub Desktop',
+      url: 'https://desktop.github.com/',
+    },
+    {
+      id: 7,
+      title: 'GitHub: What is a good commit message?',
+      url: 'https://dev.to/chrissiemhrk/git-commit-message-5e21',
+    },
+    {
+      id: 8,
+      title: 'GitHub: Flow for Collaboration',
+      url: 'https://docs.github.com/en/get-started/quickstart/github-flow',
     },
   ];
   
@@ -158,14 +181,18 @@ export interface FaqItem {
     gmail: string;
     instagram: string;
     linkedin: string;
+    github: string;
+    youtube: string;
     rights: string;
   }
   
   export const footerData: Footer = {
-    gmail: 'example@gmail.com',
-    instagram: 'https://www.instagram.com/example',
-    linkedin: 'https://www.linkedin.com/in/example',
-    rights: 'All rights reserved Hackodex 2023',
+    gmail: 'codexiter@gmail.com',
+    instagram: 'https://www.instagram.com/codexiter',
+    linkedin: 'https://www.linkedin.com/company/codex-iter',
+    github:'https://github.com/codex-iter',
+    youtube:'https://www.youtube.com/channel/UCu1S3gm2ODknxDlkpPX2RrA',
+    rights: 'All rights reserved . Hackodex 2.0 (2023)',
   };
   
   

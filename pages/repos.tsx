@@ -27,7 +27,7 @@ const Repositories = () => {
       {data.items.map((item: any) => (
         <div
           key={item.id}
-          className="group w-full cursor-pointer select-none rounded-md border border-gray-200 bg-white hover:bg-gray-100"
+          className="group w-full cursor-pointer select-none rounded-md border border-[#e3c598s] bg-[#e3c598] hover:bg-[#f59a44]"
         >
           <div className="px-5 py-3">
             <div className="flex flex-row">
@@ -36,12 +36,12 @@ const Repositories = () => {
                 href={item.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group-hover:text-juniper text-xl font-bold"
+                className="group-hover:text-juniper text-xl font-bold text-[#6e352c]"
               >
                 {item.full_name}
               </a>
               <span className="flex-1"></span>
-              <span className="text-vanilla-200 ml-2 hidden rounded-full border px-3 py-1 text-sm font-semibold md:inline">
+              <span className="text-white ml-2 hidden rounded-full bg-[#cf5230] px-3 py-1 text-sm font-semibold md:inline">
                 {item.open_issues_count} issues
               </span>
             </div>
@@ -49,12 +49,12 @@ const Repositories = () => {
               {item.description}
             </div>
             <div className="text-vanilla-400 flex flex-row py-1 font-mono text-sm">
-              <div className="mr-4">
-                <span className="text-green-600">lang: </span>
+              <div className="mr-4 text-[#f59a44]">
+                <span className="text-[#6e612f]">lang: </span>
                 {item.language}
               </div>
-              <div className="mr-4">
-                <span className="text-blue-600">stars: </span>
+              <div className="mr-4 text-[#6e612f]">
+                <span className="text-[#cf5230]">stars: </span>
                 {item.stargazers_count}
               </div>
             </div>
@@ -70,7 +70,7 @@ const RepositoriesPage = () => {
   return (
     <Layout>
       <div className="relative w-full max-w-screen-xl space-y-4 px-5 xl:px-0">
-        <h1 className="text-center text-4xl font-bold tracking-tight text-gray-900">
+        <h1 className="text-center text-4xl font-bold tracking-tight text-[#f59a44]">
           <Balancer>List of Repositories</Balancer>
         </h1>
         <Repositories />
@@ -80,7 +80,7 @@ const RepositoriesPage = () => {
             href="https://github.com/topics/hackodex"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-indigo-600 px-4 py-2 font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-[#6e352c] px-4 py-2 font-semibold leading-7 text-[#f59a44] shadow-sm hover:bg-[#6e352c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e352c]"
           >
             View all repositories
           </a>
