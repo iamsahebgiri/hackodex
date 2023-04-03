@@ -48,7 +48,7 @@ export default function Layout({
             {/*<p>Hackodex &apos;23</p>*/}
           </Link>
           <div>
-            <AnimatePresence>
+            {/* <AnimatePresence>
               {!session && status !== "loading" ? (
                 <motion.button
                   className="rounded-full border border-[#e3c598] bg-[#e3c598] p-2 px-4 text-sm text-[#6e612f] transition-all hover:bg-[#6e612f] hover:text-[#e3c598]"
@@ -60,7 +60,7 @@ export default function Layout({
               ) : (
                 <UserDropdown />
               )}
-            </AnimatePresence>
+            </AnimatePresence> */}
           </div>
         </div>
       </div>
