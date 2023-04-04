@@ -25,7 +25,7 @@ const Info: React.FC = () => {
         />
       </div>
 
-      <div>
+      <div className="md:pl-2">
         <h1 className="mb-10 text-4xl md:text-left text-center font-bold text-[#f59a44]">About</h1>
         <p className="mb-4 md:w-5/6 text-lg md:text-left text-center  text-[#e3c598]">
           HACKODEX is an initiative by CODEX Club of ITER, SOA University for
@@ -44,7 +44,7 @@ const Info: React.FC = () => {
 
       {/*-- Event timeline --*/}
 
-      <div className="mt-12 md:w-3/5 pl-2">
+      <div className="mt-12 md:w-3/5 md:pl-2">
         <h2 className="mb-2 text-4xl font-bold md:text-left text-center text-[#f59a44]">
           Event Details
         </h2>
@@ -55,14 +55,14 @@ const Info: React.FC = () => {
         <ContributorGuidelines />
       </div>
       {/*-- Resources --*/}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 md:pl-2">
         <h2 className="mt-12 text-4xl md:text-left text-center font-bold text-[#f59a44]">
           Resources For Beginners
         </h2>
         <Resources />
       </div>
       {/*-- FAQs --*/}
-      <div className="md:w-2/3">
+      <div className="md:w-2/3 md:pl-2">
         <h2 className="mt-12 mb-6 text-4xl font-bold md:text-left text-center text-[#f59a44]">FAQS</h2>
         <Faq />
       </div>
