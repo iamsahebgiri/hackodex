@@ -1,5 +1,4 @@
 {/* -----------------------------------------------FAQS--------------------------------------------------- */}
-
 export interface FaqItem {
     question: string;
     answer: string;
@@ -200,4 +199,68 @@ export interface FaqItem {
     rights: 'All rights reserved . Hackodex 2.0 (2023)',
   };
   
+   {/* ------------------------------------------Collaboration & Community----------------------------------------------- */}
+
+
+   export interface SponsorType {
+    id: number;
+    name: string;
+    logo: string;
+  }
+  
+  export const sponsors: SponsorType[] = [
+    {
+      id: 1,
+      name: 'Sponsor 1',
+      logo: '/clubs/CDH.png', 
+    },
+    
+    {
+      id: 2,
+      name: 'Sponsor 2',
+      logo: '/clubs/IEC.png',
+    },
+    {
+      id: 3,
+      name: 'Sponsor 3',
+      logo: '/clubs/SEC.png',
+    },
+    {
+      id: 4,
+      name: 'Sponsor 4',
+      logo: '/clubs/SLC.png',
+    },
+    {
+      id: 5,
+      name: 'Sponsor 5',
+      logo: '/clubs/SOA Radio.png',
+    },
+    {
+      id: 6,
+      name: 'Sponsor 6',
+      logo: '/clubs/Srishti.png',
+    },
+    {
+      id: 7,
+      name: 'Sponsor 7',
+      logo: '/community/Webwiz.png',
+    },
+    {
+      id: 8,
+      name: 'Sponsor 7',
+      logo: '/community/DEVs_Dungeon.png',
+    },
+
+    {
+      id: 9,
+      name: 'Sponsor 7',
+      logo: '/community/GDSC _ITER.png',
+    },
+    {
+      id: 10,
+      name: 'Sponsor 7',
+      logo: '/community/GFG_RTU.png',
+    },
+    // Add more sponsors here*/
+  ];
   
