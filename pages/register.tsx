@@ -6,6 +6,7 @@ import  Link  from "next/link";
 const RegisterPage = () => {
   const { SignInModal, setShowSignInModal } = useSignInModal();
   return (
+    <>
     <div className="flex h-screen items-center justify-center bg-[#6e352c] p-5">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -67,6 +68,8 @@ const RegisterPage = () => {
         </motion.div>
       </motion.div>
     </div>
+    <div className="md:my-10">&nbsp;</div>
+    </>
   );
 };
 
