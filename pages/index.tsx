@@ -48,7 +48,7 @@ export default function Home() {
           </motion.div>
         </div>
         <div className="relative px-6 lg:px-8">
-            <img src="/octocat_main.png" alt="img" className="" />
+            <img src="/Octocat_main.png" alt="img" className="" />
            
         </div>
       </div>
