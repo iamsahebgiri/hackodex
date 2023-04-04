@@ -12,7 +12,7 @@ const Carousel = () => {
     </h1>
     <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
           {community.map((logo) => (
-            <div key={logo.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+            <div key={logo.id} className="rounded-lg mx-6 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
               <img src={logo.logo} alt={logo.name} className="h-20" />
             </div>
           ))}
@@ -23,7 +23,7 @@ const Carousel = () => {
     </h1>
     <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
           {clubs.map((logo) => (
-            <div key={logo.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+            <div key={logo.id} className="rounded-lg mx-6 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
               <img src={logo.logo} alt={logo.name} className="h-20" />
             </div>
           ))}
