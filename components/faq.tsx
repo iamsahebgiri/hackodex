@@ -47,7 +47,7 @@ const Faq = () => {
           </div>
           <div
             className={`${
-              selectedQuestion === index ? "max-h-32" : "max-h-0"
+              selectedQuestion === index ? "md:max-h-32" : "max-h-0"
             } overflow-hidden transition-all duration-200 ease-in-out mt-2`}
           >
             <p className="text-[#e3c598]">{faq.answer}</p>

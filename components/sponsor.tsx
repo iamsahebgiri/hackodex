@@ -1,57 +1,33 @@
 import { useState, useEffect } from "react";
-import { SponsorType, sponsors } from "../seed";
-
-const LOGO_WIDTH = 20; // in rem
-const LOGO_MARGIN = 2; // in rem
-const MAX_LOGOS_PER_PAGE = 4;
-const ANIMATION_DURATION = 5000; // in milliseconds
+import { SponsorType, clubs, community } from "../seed";
 
 const Carousel = () => {
   const [page, setPage] = useState(0);
 
-  const numPages = Math.ceil(sponsors.length / MAX_LOGOS_PER_PAGE);
-
-  useEffect(() => {
-    // Automatically go to next page after a certain amount of time
-    const timeoutId = setTimeout(() => {
-      if (page < numPages - 1) {
-        setPage((prevPage) => prevPage + 1);
-      } else {
-        setPage(0);
-      }
-    }, ANIMATION_DURATION);
-
-    return () => clearTimeout(timeoutId);
-  }, [page, numPages]);
-
-  const visibleLogos = sponsors.slice(
-    page * MAX_LOGOS_PER_PAGE,
-    page * MAX_LOGOS_PER_PAGE + MAX_LOGOS_PER_PAGE
-  );
-
-  const numVisibleLogos = visibleLogos.length;
-
-  const totalWidth =
-    numVisibleLogos * LOGO_WIDTH + (numVisibleLogos - 1) * LOGO_MARGIN;
-
   return (
-    <div className=" h-32 m-2 bg-white bg-opacity-20  backdrop-blur-lg backdrop-filter rounded-md w-screen overflow-hidden">
-      <div className="flex absolute w-full justify-center">
-        <div
-          className="flex justify-between items-center px-8 sm:px-16  "
-          style={{ width: `${totalWidth}rem` }}
-        >
-          {visibleLogos.map((logo) => (
-            <div
-              key={logo.id}
-              className="flex-none rounded-lg overflow-hidden w-full justify-center mt-5 "
-              style={{ width: `${LOGO_WIDTH}rem`, marginRight: `${LOGO_MARGIN}rem` }}
-            >
+    <div className="mt-20 md:mt-4">
+
+  <h1 className="mb-3 text-center text-2xl font-semibold text-[#e3c598]">
+          Community Partners
+    </h1>
+    <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
+          {community.map((logo) => (
+            <div key={logo.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
               <img src={logo.logo} alt={logo.name} className="h-20" />
             </div>
           ))}
-        </div>
-      </div>
+    </div>
+
+    <h1 className="mb-3 mt-24 md:mt-12 text-center text-2xl font-semibold text-[#e3c598]">
+          In Collaboration with
+    </h1>
+    <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
+          {clubs.map((logo) => (
+            <div key={logo.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+              <img src={logo.logo} alt={logo.name} className="h-20" />
+            </div>
+          ))}
+    </div>
     </div>
   );
 };

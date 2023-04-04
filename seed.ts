@@ -207,8 +207,31 @@ export interface FaqItem {
     name: string;
     logo: string;
   }
+
+  export const community: SponsorType[] = [
+    {
+      id: 7,
+      name: 'Sponsor 7',
+      logo: '/community/Webwiz.png',
+    },
+    {
+      id: 10,
+      name: 'Sponsor 7',
+      logo: '/community/GFG_RTU.png',
+    },
+    {
+      id: 9,
+      name: 'Sponsor 7',
+      logo: '/community/DEVs_Dungeon.png',
+    },
+    {
+      id: 8,
+      name: 'Sponsor 7',
+      logo: '/community/GDSC _ITER.png',
+    },
+  ]
   
-  export const sponsors: SponsorType[] = [
+  export const clubs: SponsorType[] = [
     {
       id: 1,
       name: 'Sponsor 1',
@@ -239,28 +262,7 @@ export interface FaqItem {
       id: 6,
       name: 'Sponsor 6',
       logo: '/clubs/Srishti.png',
-    },
-    {
-      id: 7,
-      name: 'Sponsor 7',
-      logo: '/community/Webwiz.png',
-    },
-    {
-      id: 8,
-      name: 'Sponsor 7',
-      logo: '/community/DEVs_Dungeon.png',
-    },
-
-    {
-      id: 9,
-      name: 'Sponsor 7',
-      logo: '/community/GDSC _ITER.png',
-    },
-    {
-      id: 10,
-      name: 'Sponsor 7',
-      logo: '/community/GFG_RTU.png',
-    },
+    }
     // Add more sponsors here*/
   ];
   

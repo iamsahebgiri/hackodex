@@ -28,50 +28,21 @@ export default function Layout({
     <>
       <Meta {...meta} />
       <SignInModal />
-      <div className="fixed h-screen w-full bg-[#6e352c]" />
-      <div
-        className={`fixed top-0 w-full ${
-          scrolled
-            ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-            : "bg-white/0"
-        } z-30 transition-all`}
-      >
-        <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-          <Link href="/" className="flex items-center font-display text-2xl">
+      <div className="w-full bg-[#6e352c]" />
+        <div className="flex h-16 max-w-screen-xl items-center justify-center md:justify-start">
+          <Link href="/" className="flex items-center font-display text-2xl mx-auto md:mx-2">
             <Image
               src="/logo.png"
               alt="Hackodex logo"
               width="200"
               height="200"
-              className="mr-2 rounded-sm"
+              className="rounded-sm"
             />
-            {/*<p>Hackodex &apos;23</p>*/}
           </Link>
-          <div>
-            {/* <AnimatePresence>
-              {!session && status !== "loading" ? (
-                <motion.button
-                  className="rounded-full border border-[#e3c598] bg-[#e3c598] p-2 px-4 text-sm text-[#6e612f] transition-all hover:bg-[#6e612f] hover:text-[#e3c598]"
-                  onClick={() => setShowSignInModal(true)}
-                  {...FADE_IN_ANIMATION_SETTINGS}
-                >
-                  Sign In
-                </motion.button>
-              ) : (
-                <UserDropdown />
-              )}
-            </AnimatePresence> */}
-          </div>
-        </div>
       </div>
-      <main className="flex w-full flex-col items-center justify-center py-32">
+      <main className="flex w-full flex-col items-center justify-center">
         {children}
       </main>
-      {/* <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
-        <p className="text-gray-500">
-          Binary Tree
-        </p>
-      </div> */}
     </>
   );
 }

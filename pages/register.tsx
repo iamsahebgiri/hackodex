@@ -1,6 +1,7 @@
 import { RegistrationInstruction, registrationInstructions } from "../seed";
 import { motion } from "framer-motion";
 import { useSignInModal } from "../components/layout/sign-in-modal";
+import  Link  from "next/link";
 
 const RegisterPage = () => {
   const { SignInModal, setShowSignInModal } = useSignInModal();
@@ -12,7 +13,13 @@ const RegisterPage = () => {
         exit={{ opacity: 0, y: -50 }}
         className="mx-auto max-w-3xl"
       >
-        <h1 className="mb-16 text-4xl font-bold text-[#f59a44]">
+
+      <div className="md:mb-8 mb-4 flex items-center mt-28 md:mt-0">
+        <Link href="/" className="cursor-pointer mx-auto">
+          <img className="h-14" src="/logo.png" alt="Logo" />
+        </Link>
+      </div>
+        <h1 className="md:mb-12 mb-6 md:text-4xl text-2xl font-bold md:mt-0 text-center md:text-left text-[#f59a44]">
           Mentor Registration Instructions
         </h1>
 
