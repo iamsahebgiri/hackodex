@@ -35,16 +35,16 @@ const Carousel = () => {
     numVisibleLogos * LOGO_WIDTH + (numVisibleLogos - 1) * LOGO_MARGIN;
 
   return (
-    <div className="h-20 m-2">
+    <div className=" h-32 m-2 bg-white bg-opacity-20  backdrop-blur-lg backdrop-filter rounded-md w-screen overflow-hidden">
       <div className="flex absolute w-full justify-center">
         <div
-          className="flex justify-between items-center px-8 sm:px-16"
+          className="flex justify-between items-center px-8 sm:px-16  "
           style={{ width: `${totalWidth}rem` }}
         >
           {visibleLogos.map((logo) => (
             <div
               key={logo.id}
-              className="flex-none rounded-lg overflow-hidden w-full justify-center"
+              className="flex-none rounded-lg overflow-hidden w-full justify-center mt-5 "
               style={{ width: `${LOGO_WIDTH}rem`, marginRight: `${LOGO_MARGIN}rem` }}
             >
               <img src={logo.logo} alt={logo.name} className="h-20" />
