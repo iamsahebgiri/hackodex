@@ -198,85 +198,122 @@ export interface FaqItem {
     youtube:'https://www.youtube.com/channel/UCu1S3gm2ODknxDlkpPX2RrA',
     rights: 'All rights reserved . Hackodex 2.0 (2023)',
   };
-  
-   {/* ------------------------------------------Collaboration & Community----------------------------------------------- */}
+
+  {/* ------------------------------------------ Sponsors ----------------------------------------------- */}
 
 
-   export interface SponsorType {
+  export interface SponsorsType {
     id: number;
     name: string;
     logo: string;
     url: string;
   }
 
-  export const community: SponsorType[] = [
+  export const sponsor: SponsorsType[] = [
     {
-      id: 7,
-      name: 'Sponsor 7',
+      id: 1,
+      name: 'Sponsor 1',
+      logo: '/sponsors/Cuvette.png',
+      url: 'https://cuvette.tech/',
+    },
+    {
+      id: 2,
+      name: 'Sponsor 2',
+      logo: '/sponsors/Stream_Yard.png',
+      url: 'https://streamyard.com/',
+    },
+    {
+      id: 3,
+      name: 'Sponsor 3',
+      logo: '/sponsors/Taskade.png',
+      url: 'https://www.taskade.com/',
+    },
+    {
+      id: 4,
+      name: 'Sponsor 4',
+      logo: '/sponsors/UiPath.png',
+      url: 'https://www.uipath.com/',
+    },
+  ]
+  
+   {/* ------------------------------------------Collaboration & Community----------------------------------------------- */}
+
+
+   export interface CommunityType {
+    id: number;
+    name: string;
+    logo: string;
+    url: string;
+  }
+
+  export const community: CommunityType[] = [
+    {
+      id: 1,
+      name: 'Community 1',
       logo: '/community/Ascent_Academy.png',
       url: 'https://ascentacademy.vercel.app',
     },
     {
-      id: 8,
-      name: 'Sponsor 8',
+      id: 2,
+      name: 'Community 2',
       logo: '/community/DEVs_Dungeon.png',
       url: 'https://nas.io/devs-dungeon',
     },
     {
-      id: 9,
-      name: 'Sponsor 9',
+      id: 3,
+      name: 'Community 3',
       logo: '/community/GDSC_ITER.png',
       url: 'https://gdsc.community.dev/institute-of-technical-education-research-bhubaneswar/',
     },
     {
-      id: 10,
-      name: 'Sponsor 10',
+      id: 4,
+      name: 'Community 4',
       logo: '/community/GFG_RTU.png',
       url: 'https://gfgsc-rtu.github.io/linktree/',
     },
     {
-      id: 11,
-      name: 'Sponsor 11',
+      id: 5,
+      name: 'Community 5',
       logo: '/community/Webwiz.png',
       url: 'https://webwiznitr.tech/',
     },
   ]
   
-  export const clubs: SponsorType[] = [
+  export const clubs: CommunityType[] = [
     {
       id: 1,
-      name: 'Sponsor 1',
+      name: 'Club 1',
       logo: '/clubs/CDH.png', 
       url: 'https://instagram.com/cdh.iter'
     },
     
     {
       id: 2,
-      name: 'Sponsor 2',
+      name: 'Club 2',
       logo: '/clubs/IEC.png',
       url: 'https://www.iecsoauniversity.com/'
     },
     {
       id: 3,
-      name: 'Sponsor 3',
+      name: 'Club 3',
       logo: '/clubs/SEC.png',
       url: 'http://soaenglishcafe.blogspot.com'
     },
     {
       id: 4,
-      name: 'Sponsor 4',
+      name: 'Club 4',
       logo: '/clubs/SLC.png',
       url: 'https://instagram.com/soaliterary_club'
     },
     {
       id: 5,
-      name: 'Sponsor 5',
+      name: 'Club 5',
       logo: '/clubs/SOA Radio.png',
       url: 'https://youtu.be/px76qAcKyNI'
     },
     {
       id: 6,
-      name: 'Sponsor 6',
+      name: 'Club 6',
       logo: '/clubs/Srishti.png',
       url: 'https://instagram.com/srishticlub'
     }
@@ -289,6 +326,9 @@ export interface FaqItem {
   export interface Events {
     id: number;
     name: string;
+    date: string;
+    time: string;
+    venue: string;
     url: string;
   }
 
@@ -296,16 +336,9 @@ export interface FaqItem {
     {
       id: 1,
       name: 'Comming Soon',
-      url: '',
-    },
-    {
-      id: 2,
-      name: 'Comming Soon',
-      url: '',
-    },
-    {
-      id: 3,
-      name: 'Comming Soon',
+      date: '',
+      time: '',
+      venue: '',
       url: '',
     },
   ]
@@ -314,6 +347,9 @@ export interface FaqItem {
     {
       id: 1,
       name: 'Comming Soon',
+      date: '',
+      time: '',
+      venue: '',
       url: '',
     },
   ]
@@ -321,8 +357,11 @@ export interface FaqItem {
   export const clubsEvents: Events[] = [
     {
       id: 1,
-      name: 'Comming Soon',
-      url: '',
+      name: 'Opinion Oasis',
+      date: '9th April',
+      time: '',
+      venue: 'ITER, SOA University',
+      url: 'https://forms.gle/iAmdUx1yUq9Bo8VM8',
     },
   ];
   
