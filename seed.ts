@@ -358,7 +358,7 @@ export interface FaqItem {
     {
       id: 1,
       name: 'Opinion Oasis',
-      date: '9th April',
+      date: '9th April, 2023',
       time: '',
       venue: 'ITER, SOA University',
       url: 'https://forms.gle/iAmdUx1yUq9Bo8VM8',
