@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Info: React.FC = () => {
   return (
-    <div className=" bg-[#6e352c] px-4 sm:h-screen md:h-full lg:h-full">
+    <div className=" bg-[#6e352c] md:px-10 px-6 sm:h-screen md:h-full lg:h-full">
       <div className="md:mb-8 mb-4 flex items-center md:items-start">
         <Link href="/" className="cursor-pointer mx-auto md:mx-0">
           <img className="h-14 md:h-18" src="/logo.png" alt="Logo" />
@@ -19,7 +19,7 @@ const Info: React.FC = () => {
           Begin Your Open Source Journey with Hackodex 2.0
         </h2>
         <img
-          src="/octocat.png"
+          src="/Octocat_main.png"
           alt="Hackodex 2.0 Logo"
           className="h-full w-full object-contain "
         />

@@ -206,28 +206,39 @@ export interface FaqItem {
     id: number;
     name: string;
     logo: string;
+    url: string;
   }
 
   export const community: SponsorType[] = [
     {
       id: 7,
       name: 'Sponsor 7',
-      logo: '/community/Webwiz.png',
-    },
-    {
-      id: 10,
-      name: 'Sponsor 7',
-      logo: '/community/GFG_RTU.png',
-    },
-    {
-      id: 9,
-      name: 'Sponsor 7',
-      logo: '/community/DEVs_Dungeon.png',
+      logo: '/community/Ascent_Academy.png',
+      url: 'https://ascentacademy.vercel.app',
     },
     {
       id: 8,
-      name: 'Sponsor 7',
-      logo: '/community/GDSC _ITER.png',
+      name: 'Sponsor 8',
+      logo: '/community/DEVs_Dungeon.png',
+      url: 'https://nas.io/devs-dungeon',
+    },
+    {
+      id: 9,
+      name: 'Sponsor 9',
+      logo: '/community/GDSC_ITER.png',
+      url: 'https://gdsc.community.dev/institute-of-technical-education-research-bhubaneswar/',
+    },
+    {
+      id: 10,
+      name: 'Sponsor 10',
+      logo: '/community/GFG_RTU.png',
+      url: 'https://gfgsc-rtu.github.io/linktree/',
+    },
+    {
+      id: 11,
+      name: 'Sponsor 11',
+      logo: '/community/Webwiz.png',
+      url: 'https://webwiznitr.tech/',
     },
   ]
   
@@ -236,33 +247,82 @@ export interface FaqItem {
       id: 1,
       name: 'Sponsor 1',
       logo: '/clubs/CDH.png', 
+      url: 'https://instagram.com/cdh.iter'
     },
     
     {
       id: 2,
       name: 'Sponsor 2',
       logo: '/clubs/IEC.png',
+      url: 'https://www.iecsoauniversity.com/'
     },
     {
       id: 3,
       name: 'Sponsor 3',
       logo: '/clubs/SEC.png',
+      url: 'http://soaenglishcafe.blogspot.com'
     },
     {
       id: 4,
       name: 'Sponsor 4',
       logo: '/clubs/SLC.png',
+      url: 'https://instagram.com/soaliterary_club'
     },
     {
       id: 5,
       name: 'Sponsor 5',
       logo: '/clubs/SOA Radio.png',
+      url: 'https://youtu.be/px76qAcKyNI'
     },
     {
       id: 6,
       name: 'Sponsor 6',
       logo: '/clubs/Srishti.png',
+      url: 'https://instagram.com/srishticlub'
     }
     // Add more sponsors here*/
+  ];
+  
+  {/* ------------------------------------------ Events ----------------------------------------------- */}
+
+
+  export interface Events {
+    id: number;
+    name: string;
+    url: string;
+  }
+
+  export const sponsorevent: Events[] = [
+    {
+      id: 1,
+      name: 'Comming Soon',
+      url: '',
+    },
+    {
+      id: 2,
+      name: 'Comming Soon',
+      url: '',
+    },
+    {
+      id: 3,
+      name: 'Comming Soon',
+      url: '',
+    },
+  ]
+
+  export const communityevent: Events[] = [
+    {
+      id: 1,
+      name: 'Comming Soon',
+      url: '',
+    },
+  ]
+  
+  export const clubsEvents: Events[] = [
+    {
+      id: 1,
+      name: 'Comming Soon',
+      url: '',
+    },
   ];
   

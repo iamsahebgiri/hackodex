@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { SponsorType, clubs, community } from "../seed";
+import { SponsorType, clubs, community, sponsorevent, communityevent, clubsEvents } from "../seed";
 
 const Carousel = () => {
   const [page, setPage] = useState(0);
@@ -12,8 +12,10 @@ const Carousel = () => {
     </h1>
     <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
           {community.map((logo) => (
-            <div key={logo.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
-              <img src={logo.logo} alt={logo.name} className="h-20" />
+            <div key={logo.id} className="rounded-lg md:mx-6 mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+              <a href={logo.url}>
+                <img src={logo.logo} alt={logo.name} className="h-20 max-w-xs" />
+              </a>
             </div>
           ))}
     </div>
@@ -23,11 +25,55 @@ const Carousel = () => {
     </h1>
     <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
           {clubs.map((logo) => (
-            <div key={logo.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
-              <img src={logo.logo} alt={logo.name} className="h-20" />
+            <div key={logo.id} className="rounded-lg md:mx-6 mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+              <a href={logo.url}>
+              <img src={logo.logo} alt={logo.name} className="h-20 max-w-xs" />
+              </a>
+              
             </div>
           ))}
     </div>
+
+    <h1 className="mb-3 text-center text-2xl font-semibold text-[#e3c598]">
+          Events
+    </h1>
+    <div className="flex-row text-center">
+      
+      <h3 className="font-semibold text-[#e3c598]">Sponsor Event</h3>
+      <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
+      {sponsorevent.map((data) => (
+            <div key={data.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+              <a href={data.url}>
+                <h3 className="rounded-md bg-sky-500/[.09] hover:bg-cyan-600 text-white px-2">{data.name}</h3>
+              </a>
+            </div>
+          ))}
+      </div>
+
+      <h3 className="font-semibold text-[#e3c598]">Community Event</h3>
+      <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
+        {communityevent.map((data) => (
+            <div key={data.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+              <a href={data.url}>
+                <h3 className="rounded-md bg-sky-500/[.09] hover:bg-cyan-600 text-white px-2">{data.name}</h3>
+              </a>
+            </div>
+          ))}
+      </div>
+          
+      <h3 className="font-semibold text-[#e3c598]">Clubs Events</h3>
+      <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
+          {clubsEvents.map((data) => (
+            <div key={data.id} className="rounded-lg mx-3 my-1 p-2  backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+              <a href={data.url}>
+                <h3 className="rounded-md bg-sky-500/[.09] hover:bg-cyan-600 text-white px-2">{data.name}</h3>
+              </a>
+            </div>
+          ))}
+      </div>
+          
+    </div>
+
     </div>
   );
 };

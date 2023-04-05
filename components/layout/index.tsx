@@ -36,7 +36,7 @@ export default function Layout({
               alt="Hackodex logo"
               width="200"
               height="200"
-              className="rounded-sm"
+              className="md:ml-16 rounded-sm"
             />
           </Link>
       </div>
