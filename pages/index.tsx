@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="flex flex-col lg:flex-row lg:justify-between">
-        <div className="relative px-6 py-28 lg:w-1/2 lg:px-8">
+        <div className="relative md:py-28 pt-14 pb-12 lg:w-1/2 lg:px-8">
           <motion.div
             className="mx-auto max-w-2xl"
             initial="hidden"
@@ -19,8 +19,8 @@ export default function Home() {
             variants={variants}
           >
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-[#f59a44] sm:text-6xl">
-                <Balancer>Hack and learn with hackodex</Balancer>
+              <h1 className="md:text-6xl text-4xl font-bold tracking-tight text-[#f59a44] sm:text-6xl">
+                <Balancer>Hack and learn with Hackodex</Balancer>
               </h1>
               <p className="mt-6 text-lg leading-8 text-[#e3c598]">
                 Your open source journey begins with a pull request. We&apos;ve
@@ -52,12 +52,11 @@ export default function Home() {
            
         </div>
       </div>
-      <div className="relative px-6 py-10 lg:px-8 ">
-        <h1 className="mb-9 text-center text-xl text-[#e3c598]">
-          In Collaboration with
-        </h1>
-        <Sponsor/>
+      
+      <div className="w-full px-4">
+      <Sponsor/>
       </div>
+      
     </Layout>
   );
 }

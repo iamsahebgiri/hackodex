@@ -4,7 +4,7 @@ const Timeline = () => {
   const { events } = timelineData;
 
   return (
-    <div className=" mx-auto mt-12">
+    <div className=" mx-auto mt-6">
       {events.map((event) => (
         <div key={event.id} className="relative pb-8">
           <div className="relative flex space-x-3">
