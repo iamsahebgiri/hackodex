@@ -346,11 +346,11 @@ export interface FaqItem {
   export const communityevent: Events[] = [
     {
       id: 1,
-      name: 'Comming Soon',
-      date: '',
-      time: '',
+      name: 'Code for X',
+      date: '10th April, 2023',
+      time: '7:00 p.m. - 9:00 p.m.',
       venue: '',
-      url: '',
+      url: 'https://practice.geeksforgeeks.org/contest/code-for-x',
     },
   ]
   

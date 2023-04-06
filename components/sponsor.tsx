@@ -55,29 +55,39 @@ const Carousel = () => {
       <h3 className="font-semibold text-[#e3c598]">Sponsor Event</h3>
       <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
       {/* {sponsorevent.map((data) => (
-            <div key={data.id} className="rounded-lg mx-3 my-1 p-2 backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
-              <a href={data.url}>
-                <h1 className="rounded-md bg-sky-500/[.09] hover:bg-cyan-600 text-white px-2">
-                  {data.name}
-                  </h1>
-              </a>
-            </div>
+             <div key={data.id} className="rounded-lg mx-3 my-1 p-2 backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
+             <a href={data.url} className="flex">
+               <div className="my-auto mx-3">
+               <h1 className="rounded-md text-[#d58345] text-start text-3xl font-semibold">
+                 {data.name} 
+               </h1>
+               <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.date}</p>
+               <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.time}</p>
+               <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.venue}</p>
+               </div>
+             </a>
+           </div>
           ))} */}
           <h1 className="animate-pulse text-2xl ml-4 my-2 font-semibold text-[#d58345]">Coming Soon...</h1>
       </div>
 
       <h3 className="font-semibold text-[#e3c598]">Community Event</h3>
       <div className="flex flex-wrap mx-auto justify-center rounded-md w-full overflow-hidden mb-5">
-        {/* {communityevent.map((data) => (
+        {communityevent.map((data) => (
             <div key={data.id} className="rounded-lg mx-3 my-1 p-2 backdrop-blur-lg backdrop-filter overflow-hidden justify-center mt-5">
-              <a href={data.url}>
-                <h1 className="rounded-md bg-sky-500/[.09] hover:bg-cyan-600 text-white px-2">
-                  {data.name}
-                  </h1>
-              </a>
-            </div>
-          ))} */}
-          <h1 className="animate-pulse text-2xl ml-4 my-2 font-semibold text-[#d58345]">Coming Soon...</h1>
+            <a href={data.url} className="flex">
+              <div className="my-auto mx-3">
+              <h1 className="rounded-md text-[#d58345] text-start text-3xl font-semibold">
+                {data.name} 
+              </h1>
+              <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.date}</p>
+              <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.time}</p>
+              <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.venue}</p>
+              </div>
+            </a>
+          </div>
+          ))}
+          {/* <h1 className="animate-pulse text-2xl ml-4 my-2 font-semibold text-[#d58345]">Coming Soon...</h1> */}
       </div>
           
       <h3 className="font-semibold text-[#e3c598]">Clubs Events</h3>
@@ -90,6 +100,7 @@ const Carousel = () => {
                   {data.name} 
                 </h1>
                 <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.date}</p>
+                <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.time}</p>
                 <p className="text-[#e3c598] md:text-left text-sm ml-1">{data.venue}</p>
                 </div>
               </a>
