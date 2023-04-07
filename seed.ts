@@ -212,25 +212,25 @@ export interface FaqItem {
   export const sponsor: SponsorsType[] = [
     {
       id: 1,
-      name: 'Sponsor 1',
+      name: 'Cuvette',
       logo: '/sponsors/Cuvette.png',
       url: 'https://cuvette.tech/',
     },
     {
       id: 2,
-      name: 'Sponsor 2',
+      name: 'Stream Yard',
       logo: '/sponsors/Stream_Yard.png',
       url: 'https://streamyard.com/',
     },
     {
       id: 3,
-      name: 'Sponsor 3',
+      name: 'Taskade',
       logo: '/sponsors/Taskade.png',
       url: 'https://www.taskade.com/',
     },
     {
       id: 4,
-      name: 'Sponsor 4',
+      name: 'UiPath',
       logo: '/sponsors/UiPath.png',
       url: 'https://www.uipath.com/',
     },
@@ -249,31 +249,31 @@ export interface FaqItem {
   export const community: CommunityType[] = [
     {
       id: 1,
-      name: 'Community 1',
+      name: 'Ascent Academy',
       logo: '/community/Ascent_Academy.png',
       url: 'https://ascentacademy.vercel.app',
     },
     {
       id: 2,
-      name: 'Community 2',
+      name: 'DEV Dungeon',
       logo: '/community/DEVs_Dungeon.png',
       url: 'https://nas.io/devs-dungeon',
     },
     {
       id: 3,
-      name: 'Community 3',
+      name: 'GDSC ITER',
       logo: '/community/GDSC_ITER.png',
       url: 'https://gdsc.community.dev/institute-of-technical-education-research-bhubaneswar/',
     },
     {
       id: 4,
-      name: 'Community 4',
+      name: 'GFG_RTU',
       logo: '/community/GFG_RTU.png',
       url: 'https://gfgsc-rtu.github.io/linktree/',
     },
     {
       id: 5,
-      name: 'Community 5',
+      name: 'Webwiz',
       logo: '/community/Webwiz.png',
       url: 'https://webwiznitr.tech/',
     },
@@ -282,38 +282,38 @@ export interface FaqItem {
   export const clubs: CommunityType[] = [
     {
       id: 1,
-      name: 'Club 1',
+      name: 'CDH',
       logo: '/clubs/CDH.png', 
       url: 'https://instagram.com/cdh.iter'
     },
     
     {
       id: 2,
-      name: 'Club 2',
+      name: 'IEC',
       logo: '/clubs/IEC.png',
       url: 'https://www.iecsoauniversity.com/'
     },
     {
       id: 3,
-      name: 'Club 3',
+      name: 'SEC',
       logo: '/clubs/SEC.png',
       url: 'http://soaenglishcafe.blogspot.com'
     },
     {
       id: 4,
-      name: 'Club 4',
+      name: 'SLC',
       logo: '/clubs/SLC.png',
       url: 'https://instagram.com/soaliterary_club'
     },
     {
       id: 5,
-      name: 'Club 5',
+      name: 'SOA',
       logo: '/clubs/SOA Radio.png',
       url: 'https://youtu.be/px76qAcKyNI'
     },
     {
       id: 6,
-      name: 'Club 6',
+      name: 'Shristhi',
       logo: '/clubs/Srishti.png',
       url: 'https://instagram.com/srishticlub'
     }
@@ -332,18 +332,7 @@ export interface FaqItem {
     url: string;
   }
 
-  export const sponsorevent: Events[] = [
-    {
-      id: 1,
-      name: 'Comming Soon',
-      date: '',
-      time: '',
-      venue: '',
-      url: '',
-    },
-  ]
-
-  export const communityevent: Events[] = [
+  export const events: Events[] = [
     {
       id: 1,
       name: 'Code for X',
@@ -352,9 +341,6 @@ export interface FaqItem {
       venue: '',
       url: 'https://practice.geeksforgeeks.org/contest/code-for-x',
     },
-  ]
-  
-  export const clubsEvents: Events[] = [
     {
       id: 1,
       name: 'Opinion Oasis',
@@ -363,5 +349,5 @@ export interface FaqItem {
       venue: 'ITER, SOA University',
       url: 'https://forms.gle/iAmdUx1yUq9Bo8VM8',
     },
-  ];
+  ]
   
