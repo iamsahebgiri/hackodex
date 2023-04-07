@@ -96,11 +96,11 @@ const Progress = ({ count, max }: { count: number; max: number }) => {
 const Dashboard = () => {
   const { data: session } = useSession();
   const {
-    data: prs,
+    data,
     error,
     isLoading,
   } = useSWR(
-    `https://api.github.com/search/issues?q=is:pr+archived:false+is:closed+author:${session?.user.username}+label:hacktoberfest-accepted&page=1&per_page=100`,
+    `https://api.github.com/search/issues?q=is:pr+archived:false+is:closed+author:${session?.user.username}+label:hackodex2023-accepted&page=1&per_page=100`,
     (url) =>
       fetcher(url, {
         headers: {
@@ -110,7 +110,8 @@ const Dashboard = () => {
   );
 
   // TODO: find a way store the number of PRs in firebase
-  // FIX: Show only for the year '23
+  const prs = data.items.filter(item => (new Date(item.created_at)).getFullYear() >= 2023);
+
   return (
     <Layout>
       <div className="grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">

@@ -8,7 +8,7 @@ import { useSession } from "next-auth/react";
 const Repositories = () => {
   const { data: session } = useSession();
   const { data, error, isLoading } = useSWR(
-    "https://api.github.com/search/repositories?q=hackodex&page=1&per_page=100",
+    "https://api.github.com/search/repositories?q=hackodex2023&page=1&per_page=100",
     (url) =>
       fetcher(url, {
         headers: {
