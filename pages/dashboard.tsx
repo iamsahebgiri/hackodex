@@ -25,13 +25,15 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
     );
   }
 
+  const filteredPrs = prs.items.filter((item: any) => (new Date(item.created_at)).getFullYear() >= 2023);
+
   return (
     <div>
       <div className="flex p-4">
         <p className="text-3xl font-semibold text-[#6e352c]">Your contributions</p>
       </div>
       <div className="px-2 pb-2">
-        {prs.items.map((item: any) => (
+        {filteredPrs.map((item: any) => (
           <div
             key={item.id}
             className="group w-full cursor-pointer select-none rounded-md  hover:bg-[#f59a44]"
@@ -96,7 +98,7 @@ const Progress = ({ count, max }: { count: number; max: number }) => {
 const Dashboard = () => {
   const { data: session } = useSession();
   const {
-    data,
+    data: prs,
     error,
     isLoading,
   } = useSWR(
@@ -110,7 +112,6 @@ const Dashboard = () => {
   );
 
   // TODO: find a way store the number of PRs in firebase
-  const prs = data.items.filter((item: any) => (new Date(item.created_at)).getFullYear() >= 2023);
 
   return (
     <Layout>
