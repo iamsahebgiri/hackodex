@@ -110,7 +110,7 @@ const Dashboard = () => {
   );
 
   // TODO: find a way store the number of PRs in firebase
-  const prs = data.items.filter(item => (new Date(item.created_at)).getFullYear() >= 2023);
+  const prs = data.items.filter((item: any) => (new Date(item.created_at)).getFullYear() >= 2023);
 
   return (
     <Layout>
