@@ -29,7 +29,7 @@ export default function Layout({
       <Meta {...meta} />
       <SignInModal />
       <div className="w-full bg-[#6e352c]" />
-        <div className="flex h-16 max-w-screen-xl items-center justify-center md:justify-start">
+        <div className="flex h-16 max-w-screen-xl items-center justify-between md:justify-start">
           <Link href="/" className="flex items-center font-display text-2xl mx-auto md:mx-2">
             <Image
               src="/logo.png"
@@ -39,6 +39,19 @@ export default function Layout({
               className="md:ml-16 rounded-sm"
             />
           </Link>
+          <AnimatePresence>
+              {!session && status !== "loading" ? (
+                <motion.button
+                  className="rounded-full border border-[#e3c598] bg-[#e3c598] p-2 px-4 text-sm text-[#6e612f] transition-all hover:bg-[#6e612f] hover:text-[#e3c598]"
+                  onClick={() => setShowSignInModal(true)}
+                  {...FADE_IN_ANIMATION_SETTINGS}
+                >
+                  Sign In
+                </motion.button>
+              ) : (
+                <UserDropdown />
+              )}
+            </AnimatePresence>
       </div>
       <main className="flex w-full flex-col items-center justify-center">
         {children}
