@@ -77,7 +77,7 @@ const RepositoriesPage = () => {
 
         <div className="mx-auto">
           <a
-            href="https://github.com/topics/hackodex"
+            href="https://github.com/topics/hackodex2023"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md       px-4 py-2 font-semibold leading-7 text-[#f59a44] shadow-sm hover:bg-[#6e352c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e352c]"

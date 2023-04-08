@@ -30,6 +30,7 @@ export default function Layout({
       <SignInModal />
       <div className="w-full bg-[#6e352c]" />
         <div className="flex h-16 max-w-screen-xl items-center justify-between">
+          <div className="ml-5 md:ml-0">
           <Link href="/" className="flex items-center font-display text-2xl mx-auto md:mx-2">
             <Image
               src="/logo.png"
@@ -39,6 +40,8 @@ export default function Layout({
               className="md:ml-16 rounded-sm"
             />
           </Link>
+          </div>
+          <div className="mr-5 mt-3 md:mr-0">
           <AnimatePresence>
             {!session && status !== "loading" ? (
               <motion.button
@@ -52,6 +55,7 @@ export default function Layout({
               <UserDropdown />
             )}
           </AnimatePresence>
+          </div>
       </div>
       <main className="flex w-full flex-col items-center justify-center">
         {children}
