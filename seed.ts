@@ -277,6 +277,12 @@ export interface FaqItem {
       logo: '/community/Webwiz.png',
       url: 'https://webwiznitr.tech/',
     },
+     {
+      id: 6,
+      name: 'SRM',
+      logo: '/community/SRM.png',
+      url: 'https://www.instagram.com/nscc_srm/',
+    },
   ]
   
   export const clubs: CommunityType[] = [
