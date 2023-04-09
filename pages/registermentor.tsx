@@ -27,10 +27,10 @@ const RegisterPage = () => {
          
           <div className="">
             <h1 className="mb-6 text-center text-2xl font-bold text-[#f59a44] md:mb-12 md:mt-0 md:text-left md:text-4xl">
-              Contributor Registration Instructions
+              Mentor Registration Instructions
             </h1>
 
-            {contributionInstructions.map(
+            {registrationInstructions.map(
               (instruction: RegistrationInstruction) => (
                 <motion.div
                   key={instruction.step}
@@ -67,7 +67,7 @@ const RegisterPage = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Register as a Contributor
+                Register as a Mentor
               </motion.a>
 
               <SignInModal />
@@ -95,20 +95,19 @@ const RegisterPage = () => {
           <span>Discord</span>
           </div>
         </motion.a>
-
             </motion.div>
 
             <div className="flex justify-center md:justify-end">
             <motion.a
-                  href="/registermentor"
+                  href="/register"
                   className="text-base font-semibold leading-7 text-[#e3c598] mx-auto md:mx-0 my-5"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Participate as a Mentor <span aria-hidden="true">→</span>
+                  Participate as a Contributor <span aria-hidden="true">→</span>
                 </motion.a>
             </div>
-            
+
           </div>
         </motion.div>
       </div>

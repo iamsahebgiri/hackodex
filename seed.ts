@@ -80,6 +80,33 @@ export interface FaqItem {
     
   ];
 
+  export const contributionInstructions: RegistrationInstruction[] = [
+    {
+      step: 1,
+      description: "Follow code conventions",
+    },
+    {
+      step: 2,
+      description:
+        "Write clear commit messages",
+    },
+    {
+      step: 3,
+      description:
+        "A minimum of 3 PRs should be merged in order to be eligible for the certificate.",
+    },
+    {
+      step: 4,
+      description:
+        "It is mandatory to fill the form.",
+    },
+    {
+      step: 5,
+      description:
+        "Everyone taking part in hackodex should join the discord server",
+    },
+  ];
+
   {/* ------------------------------------------EVENT TIMELINE----------------------------------------------- */}
 
   export interface Event {
