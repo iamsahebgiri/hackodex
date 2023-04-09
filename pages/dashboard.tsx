@@ -1,15 +1,19 @@
-import Balancer from "react-wrap-balancer";
-import Layout from "@/components/layout";
-import Image from "next/image";
-import { useSession } from "next-auth/react";
-import useSWR from "swr/immutable";
-import { fetcher } from "@/lib/utils";
+import Balancer from 'react-wrap-balancer'
+import Layout from '@/components/layout'
+import Image from 'next/image'
+import { useSession } from 'next-auth/react'
+import useSWR from 'swr/immutable'
+import { fetcher } from '@/lib/utils'
 
 const ListAllPRs = ({ prs, error, isLoading }: any) => {
-  if (error) return <div className="p-5">failed to load</div>;
-  if (isLoading) return <div className="p-5">loading...</div>;
+  if (error) return <div className="p-5">failed to load</div>
+  if (isLoading) return <div className="p-5">loading...</div>
 
-  if (prs.items.length === 0) {
+  const filteredPrs = prs.items.filter(
+    (item: any) => new Date(item.created_at).getFullYear() >= 2023
+  )
+
+  if (filteredPrs.length === 0) {
     return (
       <div className="mx-auto px-5 py-8">
         <div className="flex items-center justify-center py-6">
@@ -22,15 +26,15 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
           Check all the repos by clicking on the user dropdown.
         </div>
       </div>
-    );
+    )
   }
-
-  const filteredPrs = prs.items.filter((item: any) => (new Date(item.created_at)).getFullYear() >= 2023);
 
   return (
     <div>
       <div className="flex p-4">
-        <p className="text-3xl font-semibold text-[#6e352c]">Your contributions</p>
+        <p className="text-3xl font-semibold text-[#6e352c]">
+          Your contributions
+        </p>
       </div>
       <div className="px-2 pb-2">
         {filteredPrs.map((item: any) => (
@@ -68,15 +72,17 @@ const ListAllPRs = ({ prs, error, isLoading }: any) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
 const Progress = ({ count, max }: { count: number; max: number }) => {
-  count = Math.min(count, max);
+  count = Math.min(count, max)
   return (
     <div className="group relative col-span-1 overflow-hidden rounded-lg bg-[#e3c598] shadow-md ring-1 ring-[#cf5230]/5">
       <div className="flex p-4">
-        <p className="font-sans text-xl font-semibold text-[#6e352c]">Your progress</p>
+        <p className="font-sans text-xl font-semibold text-[#6e352c]">
+          Your progress
+        </p>
       </div>
       <div className="mx-auto space-y-2 px-4 py-4 text-left">
         <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-lg font-bold text-transparent md:text-xl md:font-normal">
@@ -92,11 +98,11 @@ const Progress = ({ count, max }: { count: number; max: number }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 const Dashboard = () => {
-  const { data: session } = useSession();
+  const { data: session } = useSession()
   const {
     data: prs,
     error,
@@ -108,8 +114,8 @@ const Dashboard = () => {
         headers: {
           Authorization: `token ${session?.user.token}`,
         },
-      }),
-  );
+      })
+  )
 
   // TODO: find a way store the number of PRs in firebase
 
@@ -121,13 +127,22 @@ const Dashboard = () => {
         </div>
 
         <div>
-          {!isLoading ? <Progress count={prs.items.length} max={4} /> : null}
+          {!isLoading ? (
+            <Progress
+              count={
+                prs.items.filter(
+                  (item: any) => new Date(item.created_at).getFullYear() >= 2023
+                ).length
+              }
+              max={3}
+            />
+          ) : null}
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-Dashboard.auth = true;
+Dashboard.auth = true
 
-export default Dashboard;
+export default Dashboard
