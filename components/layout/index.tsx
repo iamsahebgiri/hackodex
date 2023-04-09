@@ -45,7 +45,7 @@ export default function Layout({
           <AnimatePresence>
             {!session && status !== "loading" ? (
               <motion.button
-                className="rounded-full border border-[#e3c598] bg-[#e3c598] p-2 px-4 text-sm text-[#6e612f] transition-all hover:bg-[#6e612f] hover:text-[#e3c598]"
+                className="rounded-full border border-[#e3c598] bg-[#e3c598] p-3 px-6 text-sm text-[#6e612f] transition-all hover:bg-[#6e612f] hover:text-[#e3c598]"
                 onClick={() => setShowSignInModal(true)}
                 {...FADE_IN_ANIMATION_SETTINGS}
               >

@@ -6,11 +6,15 @@ import {
 import { motion } from "framer-motion";
 import { useSignInModal } from "../components/layout/sign-in-modal";
 import Link from "next/link";
+import Head from "next/head";
 
 const RegisterPage = () => {
   const { SignInModal, setShowSignInModal } = useSignInModal();
   return (
     <>
+      <Head>
+        <title>Hackodex - A Month-Long Open-Source Coding Event for College Students</title>
+      </Head>
       <div className="mb-4 flex items-center justify-center md:mb-8">
         <Link href="/" className="mx-auto cursor-pointer text-center">
           <img className="h-14" src="/logo.png" alt="Logo" />

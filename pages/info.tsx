@@ -5,9 +5,14 @@ import Resources from "@/components/resources";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import Head from "next/head";
 
 const Info: React.FC = () => {
   return (
+    <>
+      <Head>
+        <title>Hackodex - A Month-Long Open-Source Coding Event for College Students</title>
+      </Head>
     <div className=" bg-[#6e352c] md:px-10 px-6 sm:h-screen md:h-full lg:h-full">
       <div className="md:mb-8 mb-4 flex items-center md:items-start">
         <Link href="/" className="cursor-pointer mx-auto md:mx-0">
@@ -70,6 +75,7 @@ const Info: React.FC = () => {
         <Footer />
       </div>
     </div>
+    </>
   );
 };
 
