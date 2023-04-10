@@ -66,7 +66,7 @@ const RegisterPage = () => {
               className="mt-10 flex flex-col justify-between sm:flex-row"
             >
               <motion.a
-                href="https://bit.ly/regconhackodex"
+                href="https://bit.ly/regmtrhackodex"
                 className="mb-4 rounded bg-[#cf5230] px-4 py-2 text-center text-white sm:mb-0 sm:mr-4"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
