@@ -380,6 +380,14 @@ export interface FaqItem {
   export const events: Events[] = [
     {
       id: 1,
+      name: 'Quick & Clever',
+      date: '26th April, 2023',
+      time: '',
+      venue: 'ITER, SOA University',
+      url: 'https://forms.gle/s9MTtDSjdgEJcyuHA',
+    },
+    {
+      id: 2,
       name: 'Code for X',
       date: '10th April, 2023',
       time: '7:00 p.m. - 9:00 p.m.',
@@ -387,7 +395,7 @@ export interface FaqItem {
       url: 'https://practice.geeksforgeeks.org/contest/code-for-x',
     },
     {
-      id: 1,
+      id: 3,
       name: 'Opinion Oasis',
       date: '9th April, 2023',
       time: '',
