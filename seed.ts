@@ -261,6 +261,12 @@ export interface FaqItem {
       logo: '/sponsors/UiPath.png',
       url: 'https://www.uipath.com/',
     },
+    {
+      id: 5,
+      name: 'Newton School',
+      logo: '/sponsors/Newton_School.png',
+      url: 'https://www.instagram.com/newtonschoolofficial/',
+    },
   ]
   
    {/* ------------------------------------------Collaboration & Community----------------------------------------------- */}
@@ -304,11 +310,17 @@ export interface FaqItem {
       logo: '/community/Webwiz.png',
       url: 'https://webwiznitr.tech/',
     },
-     {
+    {
       id: 6,
-      name: 'SRM',
+      name: 'NSCC SRM',
       logo: '/community/SRM.png',
       url: 'https://www.instagram.com/nscc_srm/',
+    },
+    {
+      id: 7,
+      name: 'NSCC_ITER',
+      logo: '/community/NSCC_ITER.png',
+      url: 'https://www.instagram.com/nscc_iter_official/',
     },
   ]
   
