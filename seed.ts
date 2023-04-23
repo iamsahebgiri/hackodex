@@ -378,21 +378,22 @@ export interface FaqItem {
   }
 
   export const events: Events[] = [
+ 
+    {
+      id: 0,
+      name: 'Quick & Clever',
+      date: '26th April, 2023',
+      time: '',
+      venue: 'ITER, SOA University',
+      url: 'https://forms.gle/s9MTtDSjdgEJcyuHA',
+    },
     {
       id: 1,
       name: 'Web Development in Bussiness',
       date: '23th April, 2023',
       time: '6:00PM - 7:30PM',
       venue: '',
-      url: 'https://forms.gle/9XcPL3kRakFuQ9Mf9',
-    },
-    {
-      id: 1,
-      name: 'Quick & Clever',
-      date: '26th April, 2023',
-      time: '',
-      venue: 'ITER, SOA University',
-      url: 'https://forms.gle/s9MTtDSjdgEJcyuHA',
+      url: 'https://www.youtube.com/live/FpuGqYtkKDw?feature=share&t=240',
     },
     {
       id: 2,
