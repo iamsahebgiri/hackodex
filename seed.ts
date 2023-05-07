@@ -404,6 +404,14 @@ export interface FaqItem {
     },
     {
       id: 3,
+      name: 'I Can Do Both',
+      date: '27th April, 2023',
+      time: '5:00PM - 7:00PM',
+      venue: '',
+      url: 'https://forms.gle/Q4miTeVukBvdphTJ8',
+    },
+    {
+      id: 4,
       name: 'Web Development in Bussiness',
       date: '23th April, 2023',
       time: '6:00PM - 7:30PM',
@@ -411,7 +419,7 @@ export interface FaqItem {
       url: 'https://www.youtube.com/live/FpuGqYtkKDw?feature=share&t=240',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Code for X',
       date: '10th April, 2023',
       time: '7:00 p.m. - 9:00 p.m.',
@@ -419,7 +427,7 @@ export interface FaqItem {
       url: 'https://practice.geeksforgeeks.org/contest/code-for-x',
     },
     {
-      id: 5,
+      id: 6,
       name: 'Opinion Oasis',
       date: '9th April, 2023',
       time: '',
