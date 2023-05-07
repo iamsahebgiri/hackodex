@@ -380,6 +380,14 @@ export interface FaqItem {
   export const events: Events[] = [
     {
       id: 0,
+      name: 'TRIVIA TIME',
+      date: '6th May, 2023',
+      time: '7:00PM - 7:30 PM',
+      venue: '',
+      url: 'https://forms.gle/sBCYEkKWAnjaRe6b6',
+    },
+    {
+      id: 0,
       name: 'BOT DEPLOYMENT SERIES',
       date: '29th April, 2023',
       time: '6:30PM - 7:30 PM',

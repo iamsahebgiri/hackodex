@@ -27,14 +27,22 @@ export default function Home() {
                 curated a list of beginner friendly issues for you to check out.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <motion.a
-                  href="/register"
-                  className="rounded-md bg-[#f59a44] px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-[#e3c598] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Start hacking
-                </motion.a>
+              <motion.a
+          href="https://discord.gg/gpwyF73trn"
+          className="my-auto grid grid-flow-col rounded-md bg-[#7289DA] px-3.5 py-1.5 text-base font-semibold leading-7 text-[#fff]"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <div className="flex justify-center">
+          <img
+            src="/discord.png"
+            width="24px"
+            height="24px"
+            className="my-auto mx-1"
+          />
+          <span>Discord</span>
+          </div>
+        </motion.a>
                 <motion.a
                   href="/info"
                   className="text-base font-semibold leading-7 text-[#e3c598]"

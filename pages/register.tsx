@@ -7,9 +7,16 @@ import { motion } from "framer-motion";
 import { useSignInModal } from "../components/layout/sign-in-modal";
 import Link from "next/link";
 import Head from "next/head";
+import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
 
 const RegisterPage = () => {
   const { SignInModal, setShowSignInModal } = useSignInModal();
+  const { push } = useRouter();
+
+  useEffect(()=>{
+    push('/');
+  },[])
 
   return (
     <>
