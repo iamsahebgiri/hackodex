@@ -380,6 +380,14 @@ export interface FaqItem {
   export const events: Events[] = [
     {
       id: 0,
+      name: 'TRIVIA TIME',
+      date: '6th May, 2023',
+      time: '7:00PM - 7:30 PM',
+      venue: '',
+      url: 'https://forms.gle/sBCYEkKWAnjaRe6b6',
+    },
+    {
+      id: 1,
       name: 'BOT DEPLOYMENT SERIES',
       date: '29th April, 2023',
       time: '6:30PM - 7:30 PM',
@@ -387,7 +395,7 @@ export interface FaqItem {
       url: 'https://meet.google.com/apu-ynbz-adc',
     },
     {
-      id: 1,
+      id: 2,
       name: 'Quick & Clever',
       date: '26th April, 2023',
       time: '',
@@ -395,7 +403,7 @@ export interface FaqItem {
       url: 'https://forms.gle/s9MTtDSjdgEJcyuHA',
     },
     {
-      id: 2,
+      id: 3,
       name: 'Web Development in Bussiness',
       date: '23th April, 2023',
       time: '6:00PM - 7:30PM',
@@ -403,7 +411,7 @@ export interface FaqItem {
       url: 'https://www.youtube.com/live/FpuGqYtkKDw?feature=share&t=240',
     },
     {
-      id: 3,
+      id: 4,
       name: 'Code for X',
       date: '10th April, 2023',
       time: '7:00 p.m. - 9:00 p.m.',
@@ -411,7 +419,7 @@ export interface FaqItem {
       url: 'https://practice.geeksforgeeks.org/contest/code-for-x',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Opinion Oasis',
       date: '9th April, 2023',
       time: '',
